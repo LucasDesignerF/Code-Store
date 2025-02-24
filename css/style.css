@@ -96,7 +96,6 @@ body {
   text-align: center;
   background: radial-gradient(circle at 75% 30%, rgba(0, 255, 157, 0.1) 0%, transparent 40%), linear-gradient(215deg, var(--preto-carbon) 40%, var(--preto-metal));
   padding: 0 5%;
-  margin-top: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -111,11 +110,18 @@ body {
   pointer-events: none;
 }
 
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   text-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+  color: var(--neon-verde);
 }
 
 .hero-content p {
@@ -123,6 +129,8 @@ body {
   color: rgba(240, 240, 240, 0.9);
   margin-bottom: 3rem;
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-button {
@@ -136,6 +144,9 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-button:before {
