@@ -5,6 +5,7 @@ document.getElementById('discord-login').addEventListener('click', () => {
   window.location.href = `https://discord.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${scope}`;
 });
 
+// Suporte para links internos com rolagem suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -13,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (targetElement) {
       window.scrollTo({
         top: targetElement.offsetTop,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   });
