@@ -93,6 +93,51 @@ body {
   color: var(--preto-carbon);
 }
 
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--branco-tech);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--preto-metal);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--branco-tech);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: var(--neon-verde);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
