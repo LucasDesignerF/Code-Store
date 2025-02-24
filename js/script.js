@@ -5,7 +5,6 @@ document.getElementById('discord-login').addEventListener('click', () => {
   const scope = 'identify';
   window.location.href = `https://discord.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${scope}`;
 });
-
 // Suporte para links internos com rolagem suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -20,19 +19,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-// Verificação de sessão no dashboard
-document.addEventListener('DOMContentLoaded', () => {
-  const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
-    const [key, value] = cookie.split('=');
-    acc[key] = value;
-    return acc;
-  }, {});
-
-  // Verifica se o usuário está logado (cookie user_id)
-  if (!cookies.user_id) {
-    window.location.href = '/login.html'; // Redireciona para login se não estiver logado
-  }
 
   // Botão de logout
   const logoutButton = document.getElementById('logout-button');
