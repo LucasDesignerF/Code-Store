@@ -1,3 +1,4 @@
+// Função para redirecionar para o login do Discord
 document.getElementById('discord-login').addEventListener('click', () => {
   const clientId = '1336360272520286269';
   const redirectUri = 'https://api.ofc-rede.workers.dev/callback'; // URL do Cloudflare Worker
@@ -18,4 +19,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     }
   });
+});
+
+// Verificação de sessão no dashboard
+document.addEventListener('DOMContentLoaded', () => {
+  const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
+    const [key, value] = cookie.split('=');
+    acc[key] = value;
+    return acc;
+  }, {});
+
+  // Verifica se o usuário está logado (cookie user_id)
+  if (!cookies.user_id) {
+    window.location.href = '/login.html'; // Redireciona para login se não estiver logado
+  }
+
+  // Botão de logout
+  const logoutButton = document.getElementById('logout-button');
+  if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+      document.cookie = 'user_id=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+      window.location.href = '/login.html';
+    });
+  }
 });
