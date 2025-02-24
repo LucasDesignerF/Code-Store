@@ -3,19 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título e Descrição -->
   <title>Login - Code Projects</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Faça login na Code Projects usando sua conta do Discord ou GitHub. Acesse nossas ferramentas avançadas de desenvolvimento.">
+  <!-- Meta Tags para Redes Sociais -->
+  <meta property="og:title" content="Login - Code Projects">
+  <meta property="og:description" content="Faça login na Code Projects usando sua conta do Discord ou GitHub. Acesse nossas ferramentas avançadas de desenvolvimento.">
+  <meta property="og:image" content="https://source.unsplash.com/600x400/?login,technology">
+  <meta property="og:url" content="https://code-projects.redebots.shop/login.html">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Login - Code Projects">
+  <meta name="twitter:description" content="Faça login na Code Projects usando sua conta do Discord ou GitHub. Acesse nossas ferramentas avançadas de desenvolvimento.">
+  <meta name="twitter:image" content="https://source.unsplash.com/600x400/?login,technology">
+  <!-- Autor e Ícone -->
+  <meta name="author" content="Lucas Dev">
+  <link rel="icon" href="https://cdn-icons-png.freepik.com/512/5338/5338322.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
   <header>
-    <h1>Login</h1>
+    <div class="logo">
+      <img src="https://cdn-icons-png.freepik.com/512/5338/5338322.png" alt="Logo" class="logo-img">
+      <span>CodeProjects</span>
+    </div>
   </header>
   <main>
-    <section>
+    <section class="login-section">
+      <h1>Faça Login</h1>
+      <p>Acesse sua conta para aproveitar todas as funcionalidades da plataforma.</p>
       <button id="discord-login">Login com Discord</button>
       <button id="github-login" disabled>Login com GitHub (Não Implementado)</button>
     </section>
   </main>
+  <!-- Script -->
   <script src="js/script.js"></script>
 </body>
 </html>
