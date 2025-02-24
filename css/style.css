@@ -35,11 +35,17 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-size: 1.8rem;
   font-weight: 600;
-  background: linear-gradient(45deg, var(--neon-verde), #00cc88);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--neon-verde);
+}
+
+.logo img {
+  width: 50px; /* Mesmo tamanho da logo no footer */
+  height: 50px; /* Mesmo tamanho da logo no footer */
 }
 
 .nav-links {
@@ -349,7 +355,6 @@ footer {
   color: var(--neon-verde);
 }
 
-
 /* Responsividade */
 @media (max-width: 768px) {
   .nav-links {
@@ -361,7 +366,6 @@ footer {
     padding: 2rem;
   }
 
-@media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
     gap: 2rem;
@@ -370,7 +374,6 @@ footer {
   .footer-content {
     grid-template-columns: 1fr;
   }
-}
 
   .hero-content h1 {
     font-size: 2.5rem;
