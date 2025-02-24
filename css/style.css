@@ -197,18 +197,59 @@ body {
   margin-bottom: 0.8rem;
   color: var(--branco-tech);
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.feature-image img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.5s ease;
+.feature-content ul li i {
+  color: var(--neon-verde);
 }
 
-.feature-image:hover img {
-  transform: scale(1.05);
+.feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.feature-image i {
+  font-size: 5rem;
+  color: var(--neon-verde);
+}
+
+/* Sobre Nós */
+.about {
+  padding: 6rem 5%;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: var(--neon-verde);
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: var(--branco-tech);
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--neon-verde);
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
 }
 
 /* Footer */
@@ -251,17 +292,32 @@ footer {
   color: var(--neon-verde);
 }
 
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--branco-tech);
+  margin-top: 2rem;
+}
+
+footer p i {
+  color: var(--neon-verde);
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
+
   .feature-card {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
+
   .footer-content {
     grid-template-columns: 1fr;
   }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
