@@ -7,85 +7,88 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>CodeProjects</h1>
-      <nav>
-        <ul>
-          <li><a href="#recursos">Recursos</a></li>
-          <li><a href="#templates">Templates</a></li>
-          <li><a href="#solucoes">Soluções</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="register.html">Registrar</a></li>
-        </ul>
-      </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeProjects</div>
+    <div class="nav-links">
+      <a href="#recursos">Recursos</a>
+      <a href="#templates">Templates</a>
+      <a href="#solucoes">Soluções</a>
     </div>
-  </header>
+    <div class="auth-buttons">
+      <button><a href="login.html" style="color: inherit; text-decoration: none;">Login</a></button>
+      <button><a href="register.html" style="color: inherit; text-decoration: none;">Registrar</a></button>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h2>Transforme Ideias em Código Extraordinário</h2>
+    <div class="hero-content">
+      <h1>Transforme Ideias em Código Extraordinário</h1>
       <p>Domine a arte da programação com ferramentas profissionais e recursos de última geração.</p>
-      <a href="#" class="btn-primary">Iniciar Projeto</a>
+      <button class="cta-button">Iniciar Projeto</button>
     </div>
   </section>
 
+  <!-- Features Section -->
   <section class="features" id="recursos">
-    <div class="container">
-      <h2>Recursos</h2>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <img src="https://source.unsplash.com/600x400/?coding,editor" alt="IDE Avançada">
-          <h3>IDE Avançada</h3>
-          <p>Ambiente completo com suporte para múltiplas linguagens, debug integrado e terminal cloud.</p>
-        </div>
-        <div class="feature-item">
-          <img src="https://source.unsplash.com/600x400/?code,templates" alt="Template Factory">
-          <h3>Template Factory</h3>
-          <p>Biblioteca com +500 templates profissionais para todos os frameworks populares.</p>
-        </div>
+    <div class="feature-card">
+      <div class="feature-content">
+        <h2>IDE Avançada</h2>
+        <p>Ambiente completo com suporte para múltiplas linguagens, debug integrado e terminal cloud.</p>
+      </div>
+      <div class="feature-image">
+        <img src="https://source.unsplash.com/600x400/?coding,editor" alt="IDE Avançada">
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-content">
+        <h2>Template Factory</h2>
+        <p>Biblioteca com +500 templates profissionais para todos os frameworks populares.</p>
+      </div>
+      <div class="feature-image">
+        <img src="https://source.unsplash.com/600x400/?code,templates" alt="Template Factory">
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-links">
-        <div>
-          <h3>Produtos</h3>
-          <ul>
-            <li><a href="#">Editor Web</a></li>
-            <li><a href="#">Templates PRO</a></li>
-            <li><a href="#">Extensões</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Empresa</h3>
-          <ul>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Blog Tech</a></li>
-            <li><a href="#">Carreiras</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Suporte</h3>
-          <ul>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Comunidade</a></li>
-            <li><a href="#">API</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">Segurança</a></li>
-            <li><a href="#">Termos</a></li>
-            <li><a href="#">Privacidade</a></li>
-          </ul>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Produtos</h3>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-code"></i> Editor Web</a></li>
+          <li><a href="#"><i class="fa-solid fa-file-code"></i> Templates PRO</a></li>
+          <li><a href="#"><i class="fa-solid fa-puzzle-piece"></i> Extensões</a></li>
+        </ul>
       </div>
-      <p>&copy; 2025 Code Projects. Todos os direitos reservados.</p>
+      <div class="footer-section">
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-users"></i> Equipe</a></li>
+          <li><a href="#"><i class="fa-solid fa-blog"></i> Blog Tech</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Carreiras</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-book"></i> Docs</a></li>
+          <li><a href="#"><i class="fa-solid fa-comments"></i> Comunidade</a></li>
+          <li><a href="#"><i class="fa-solid fa-code-branch"></i> API</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Segurança</a></li>
+          <li><a href="#"><i class="fa-solid fa-file-contract"></i> Termos</a></li>
+          <li><a href="#"><i class="fa-solid fa-user-lock"></i> Privacidade</a></li>
+        </ul>
+      </div>
     </div>
+    <p>&copy; 2025 Code Projects. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
