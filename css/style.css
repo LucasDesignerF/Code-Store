@@ -314,6 +314,149 @@ body {
   transform: scale(1.2);
 }
 
+/* Equipe */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.member-card {
+  background: var(--preto-metal);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px; /* Largura fixa para as cards */
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-card img {
+  width: 100px; /* Tamanho fixo para as imagens */
+  height: 100px; /* Tamanho fixo para as imagens */
+  border-radius: 50%; /* Formato circular */
+  object-fit: cover; /* Garante que a imagem não distorça */
+  margin-bottom: 1rem;
+}
+
+.member-card h3 {
+  font-size: 1.2rem;
+  color: var(--neon-verde);
+  margin-bottom: 0.5rem;
+}
+
+.member-card p {
+  font-size: 1rem;
+  color: var(--branco-tech);
+  opacity: 0.9;
+}
+
+/* Blog Tech */
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.post-card {
+  background: var(--preto-metal);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px; /* Largura fixa para as cards */
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-10px);
+}
+
+.post-card img {
+  width: 100%;
+  height: 150px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Garante que a imagem não distorça */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.post-card h3 {
+  font-size: 1.4rem;
+  color: var(--neon-verde);
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  font-size: 1rem;
+  color: var(--branco-tech);
+  opacity: 0.9;
+}
+
+.read-more {
+  color: var(--neon-verde);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: var(--branco-tech);
+}
+
+/* Carreiras */
+.job-listings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.job-card {
+  background: var(--preto-metal);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  width: 300px; /* Largura fixa para as cards */
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+}
+
+.job-card h3 {
+  font-size: 1.4rem;
+  color: var(--neon-verde);
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  font-size: 1rem;
+  color: var(--branco-tech);
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--neon-verde);
+  color: var(--preto-carbon);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.apply-button:hover {
+  background: var(--branco-tech);
+  color: var(--neon-verde);
+}
+
 /* Footer */
 footer {
   background: var(--preto-metal);
