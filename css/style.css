@@ -270,10 +270,49 @@ footer {
   border-top: 1px solid rgba(0, 255, 157, 0.1);
 }
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-logo span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--neon-verde);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-social a {
+  color: var(--neon-verde);
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+  margin-bottom: 4rem;
 }
 
 .footer-section h3 {
@@ -293,9 +332,6 @@ footer {
 .footer-section a {
   color: var(--branco-tech);
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
   transition: color 0.3s ease;
 }
 
@@ -303,16 +339,16 @@ footer {
   color: var(--neon-verde);
 }
 
-footer p {
+.footer-bottom {
   text-align: center;
   font-size: 0.9rem;
   color: var(--branco-tech);
-  margin-top: 2rem;
 }
 
-footer p i {
+.footer-bottom i {
   color: var(--neon-verde);
 }
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -325,9 +361,16 @@ footer p i {
     padding: 2rem;
   }
 
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
   }
+}
 
   .hero-content h1 {
     font-size: 2.5rem;
