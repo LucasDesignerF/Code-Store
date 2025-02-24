@@ -3,18 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Dashboard - Code Projects</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <!-- Título e Descrição -->
+  <title>Dashboard - Code Projects</title>
+  <meta name="description" content="Acesse sua dashboard de usuário e explore recursos avançados para desenvolvimento de projetos.">
+  <!-- Meta Tags para Redes Sociais -->
+  <meta property="og:title" content="Dashboard - Code Projects">
+  <meta property="og:description" content="Acesse sua dashboard de usuário e explore recursos avançados para desenvolvimento de projetos.">
+  <meta property="og:image" content="https://source.unsplash.com/600x400/?dashboard,technology">
+  <meta property="og:url" content="https://code-projects.redebots.shop/user/dashboard.html">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dashboard - Code Projects">
+  <meta name="twitter:description" content="Acesse sua dashboard de usuário e explore recursos avançados para desenvolvimento de projetos.">
+  <meta name="twitter:image" content="https://source.unsplash.com/600x400/?dashboard,technology">
+  <!-- Autor e Ícone -->
+  <meta name="author" content="Lucas Dev">
+  <link rel="icon" href="https://cdn-icons-png.freepik.com/512/5338/5338322.png" type="image/x-icon">
+  <!-- Font Awesome e CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/user_dash.css">
 </head>
 <body>
-  <header>
-    <h1>User Dashboard</h1>
-  </header>
-  <main>
-    <section>
-      <p>Bem-vindo, Usuário!</p>
-      <a href="/">Voltar ao Início</a>
-    </section>
-  </main>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://cdn-icons-png.freepik.com/512/5338/5338322.png" alt="Logo" class="logo-img">
+      CodeProjects
+    </div>
+    <div class="nav-links">
+      <a href="#projetos">Projetos</a>
+      <a href="#templates">Templates</a>
+      <a href="#configuracoes">Configurações</a>
+    </div>
+    <div class="auth-buttons">
+      <button id="logout-button">Sair</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bem-vindo à Sua Dashboard</h1>
+      <p>Aqui você pode gerenciar seus projetos, acessar templates e muito mais.</p>
+    </div>
+  </section>
+
+  <!-- Projetos Section -->
+  <section class="about" id="projetos">
+    <div class="container">
+      <h2>Seus Projetos</h2>
+      <p>Gerencie todos os seus projetos em um só lugar.</p>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Projeto Exemplo 1</h3>
+          <p>Descrição breve do projeto exemplo 1.</p>
+          <a href="#" class="view-button">Ver Projeto</a>
+        </div>
+        <div class="project-card">
+          <h3>Projeto Exemplo 2</h3>
+          <p>Descrição breve do projeto exemplo 2.</p>
+          <a href="#" class="view-button">Ver Projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates Section -->
+  <section class="features" id="templates">
+    <div class="feature-card">
+      <div class="feature-content">
+        <h2>Templates Recentes</h2>
+        <p>Acesse templates populares para acelerar seu desenvolvimento.</p>
+      </div>
+      <div class="template-list">
+        <div class="template-card">
+          <h3>Template React</h3>
+          <p>Um template inicial para projetos React.</p>
+          <a href="#" class="download-button">Baixar</a>
+        </div>
+        <div class="template-card">
+          <h3>Template Node.js</h3>
+          <p>Um template inicial para projetos Node.js.</p>
+          <a href="#" class="download-button">Baixar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Configurações Section -->
+  <section class="about" id="configuracoes">
+    <div class="container">
+      <h2>Configurações da Conta</h2>
+      <p>Atualize suas preferências e gerencie sua conta.</p>
+      <form class="settings-form">
+        <div class="form-group">
+          <label for="username">Nome de Usuário</label>
+          <input type="text" id="username" placeholder="Seu nome de usuário" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Seu e-mail" required>
+        </div>
+        <button type="submit" class="save-button">Salvar Alterações</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="https://cdn-icons-png.freepik.com/512/5338/5338322.png" alt="Logo" class="footer-logo-img">
+        <span>CodeProjects</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://discord.gg/x74fnzcz2S" target="_blank"><i class="fa-brands fa-discord fa-2x"></i></a>
+        <a href="https://github.com/LucasDesignerF" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Produtos</h3>
+        <ul>
+          <li><a href="#">Editor Web</a></li>
+          <li><a href="#">Templates PRO</a></li>
+          <li><a href="#">Extensões</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Blog Tech</a></li>
+          <li><a href="#">Carreiras</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Comunidade</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">Termos</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Code Projects. Todos os direitos reservados. Desenvolvido com <i class="fa-solid fa-heart"></i> por Lucas Dev</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Verifica se o usuário está logado (cookie access_token)
+    document.addEventListener('DOMContentLoaded', () => {
+      const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
+        const [key, value] = cookie.split('=');
+        acc[key] = value;
+        return acc;
+      }, {});
+
+      if (!cookies.access_token) {
+        window.location.href = '/login.html'; // Redireciona para login se não estiver logado
+      }
+
+      // Botão de logout
+      document.getElementById('logout-button').addEventListener('click', () => {
+        document.cookie = 'access_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+        window.location.href = '/login.html';
+      });
+    });
+  </script>
 </body>
 </html>
